@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const disbut = require('discord.js-buttons')
 
 
@@ -19,9 +19,9 @@ var img = ayarlar.img;
 	console.log('Dừng lại tất cả cuộc tấn công:' +  message.guild.id)
 	const embed = new Discord.MessageEmbed()
 		.setColor('RANDOM')
-		.setTitle(version)
-		.setDescription("TẤT CẢ CUỘC TẤN CÔNG ĐÃ DỪNG LẠI!")
-		.setFooter('© » FlexBOT 2022-2023', img)
+		.setTitle("")
+		.setDescription("**ALL STOP ATTACK!**")
+		.setFooter("")
 		.setThumbnail("")
 	 message.channel.send(embed);
 	 message.react('✅');

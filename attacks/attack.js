@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const disbut = require('discord.js-buttons')
 
 exports.run = async (client, message, args) => {
@@ -12,9 +12,7 @@ var room = ayarlar.commandroom;
 var version = ayarlar.versionbot;
 var img = ayarlar.img;
 var photo = ayarlar.photo;
-var rolebasic = ayarlar.rolebasic;
-const BannedWords = ["mc2lord.net", "103.74.120.226"]
-
+const BannedWords = ["legendmulti.ga", "1.1.1.1"]
 
 if (message.channel.id != room) {
 	return;
@@ -34,7 +32,7 @@ if(!args[1]) {
 	const embed1 = new Discord.MessageEmbed()
 	.setColor('RANDOM')
 	.setTitle('CẢNH BÁO')
-	.setDescription("`Yêu cầu đồng trí ghi phiên bản BOT`")
+	.setDescription("`Yêu cầu đồng chí ghi phiên bản BOT`")
 	message.channel.send(embed1);
 	message.react('❌');
 	return;
@@ -76,14 +74,13 @@ if(args[2] === "chat") {
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("Máy Chủ: `" + host + "` \n Phiên Bản: `" + protocol + "`\n \n Phương pháp: `" + miniflex + "💥`\n \n Tên BOT: `FLEX_B0T` \n Nội Dung CHAT: `Attack Premium | FlexBot is Best` \n Thời gian: `60 giây 🕒`")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 			.setImage(photo)
 		const countdownEmbed = new Discord.MessageEmbed()
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("ĐANG KIỂM TRA...")
-			.setImage("https://i.gifer.com/FRKK.gif")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 	message.channel.send({ embed: countdownEmbed }).then((msg) => {
 			setTimeout(function () {
 				msg.edit(embed);
@@ -117,14 +114,13 @@ if(args[2] === "chat") {
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("Máy Chủ: `" + host + "` \n Phiên Bản: `" + protocol + "`\n \n Phương pháp: `" + miniflex + "💥`\n \n Tên BOT: `" + prefix +"` \n Nội Dung CHAT: `Attack Premium | FlexBot is Best` \n Thời gian: `60 giây 🕒`")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 			.setImage(photo)
 		const countdownEmbed = new Discord.MessageEmbed()
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("ĐANG KIỂM TRA...")
-			.setImage("https://i.gifer.com/FRKK.gif")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 	message.channel.send({ embed: countdownEmbed }).then((msg) => {
 			setTimeout(function () {
 				msg.edit(embed);
@@ -156,14 +152,13 @@ if(args[2] === "chat") {
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("Máy Chủ: `" + host + "` \n Phiên Bản: `" + protocol + "`\n \n Phương pháp: `" + miniflex + "💥`\n \n Tên BOT: `" + prefix + "` \n Nội Dung CHAT: `" + chatbot + "` \n Thời gian: `60 giây 🕒`")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 			.setImage(photo)
 		const countdownEmbed = new Discord.MessageEmbed()
 			.setColor('RANDOM')
 			.setTitle(version)
 			.setDescription("ĐANG KIỂM TRA...")
-			.setImage("https://i.gifer.com/FRKK.gif")
-			.setFooter('© » FlexBOT 2022-2023', img)
+			.setFooter('Tiền to thế này thơm là đúng', img)
 	message.channel.send({ embed: countdownEmbed }).then((msg) => {
 			setTimeout(function () {
 				msg.edit(embed);
@@ -230,16 +225,22 @@ if(args[2] === "tcpkiller" || args[2] === "spigot" || args[2] === "bye" || args[
 
 	const embed = new Discord.MessageEmbed()
 		.setColor('RANDOM')
-		.setTitle(version)
-		.setDescription("Máy Chủ: `" + host + "` \n Phiên Bản: `" + protocol + "`\n \n Phương pháp: `" + miniflex + "💥`\n \n Số lượng Bot: `25.000 🚀` \n Thời gian: `60 giây 🕒`")
-		.setFooter('© » FlexBOT 2022-2023', img)
-		.setImage(photo)
+		.setTitle('🌩️ **AN ATTACK HAS BEEN LAUNCH!**')
+		.addFields(
+		{ name: '👻‍ User:', value: `${message.author.username}`, inline: true },
+    { name: '🔗 Server:', value: `${host}`, inline: true },
+    { name: '🔒 Version:', value: `${protocol}`, inline: true },
+    { name: '💥 Method:', value: `${miniflex}`, inline: true },
+    { name: '🚀 Bot:', value: 'Unlimited', inline: true },
+    { name: '⏰ Duration:', value: '60s', inline: true },
+  )
+		.setFooter('Tiền to thế này thơm là đúng', img)
+                .setImage(`http://status.mclive.eu/FlexBot/${args[0]}/25565/banner.png`)
 	const countdownEmbed = new Discord.MessageEmbed()
 		.setColor('RANDOM')
 		.setTitle(version)
 		.setDescription("ĐANG KIỂM TRA...")
-		.setImage("https://i.gifer.com/FRKK.gif")
-		.setFooter('© » FlexBOT 2022-2023', img)
+		.setFooter('Tiền to thế này thơm là đúng', img)
 	message.channel.send({ embed: countdownEmbed }).then((msg) => {
 			setTimeout(function () {
 				msg.edit(embed);
